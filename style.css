@@ -1,0 +1,420 @@
+*{padding: 0;margin: 0;}
+
+body {
+  /* background-image: url(img/fon.jpg); */
+  background-color: #04041e;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.head_dec {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 80vw;
+    height: 130px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 80vw;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_cord {
+    display: flex;
+    justify-content: center;
+}
+
+.button_menu_1, .button_menu_2, .button_menu_3 {
+    background-color: #3076A7;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 80vw;
+    border-radius: 10px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.content_cord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+
+@media (max-width: 786px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu {
+        height: 200px;
+    }
+    .name_site {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+/* -----------------ВСЕ КНОПИКИ----------------- */
+
+.btn-3 {
+  --color_button_black: #ffc83d;
+  --color_button_white: #FFB800;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 10px 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  /* 3 */
+  .btn-3 {
+    background: var(--color_button_white);
+    background: linear-gradient(0deg, var(--color_button_black) 0%, var(--color_button_black) 100%);
+    width: 63%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--color_button_black);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: var(--color_button_white);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--color_button_black);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  
+  /* 4 */
+
+
+
+
+/* СТИЛИ ДЛЯ СТРАНИЦИ knigi.html */
+
+.menu_knigi {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 80vw;
+    height: 80px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----------------Переменные----------------- */
+/* Главная страница кнопки */
+.btn-3 {
+  --color_button_black: #ffc83d;
+  --color_button_white: #FFB800;
+}
+/* Кнопки назад */
+.btn-3_1 {
+  --color_button_white_2: rgb(186, 238, 0);
+  --color_button_black_2: rgb(136, 206, 24);
+}
+/* Настройки текста на главной страници */
+.gl_font {
+  --color_text_gl: rgb(0, 0, 0);
+  --text_scale_gl: 17px;
+}
+
+
+/* -----------------ВСЕ КНОПИКИ назад----------------- */
+
+.btn-3_1 {
+  --color_button_white_2: rgb(186, 238, 0);
+  --color_button_black_2: rgb(136, 206, 24);
+}
+
+.custom-btn_1 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 10px 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  /* 3 */
+  .btn-3_1 {
+    background: var(--color_button_white_2);
+    background: linear-gradient(0deg, var(--color_button_black_2) 0%, var(--color_button_black_2) 100%);
+    width: 63%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-3_1 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3_1:before,
+  .btn-3_1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: var(--color_button_white_2);
+    transition: all 0.3s ease;
+  }
+  .btn-3_1:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3_1:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3_1:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3_1:hover:before {
+    height: 100%;
+  }
+  .btn-3_1:hover:after {
+    width: 100%;
+  }
+  .btn-3_1 span:hover{
+     color: var(--color_button_black_2);
+  }
+  .btn-3_1 span:before,
+  .btn-3_1 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: var(--color_button_white_2);
+    transition: all 0.3s ease;
+  }
+  .btn-3_1 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3_1 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3_1 span:hover:before {
+    height: 100%;
+  }
+  .btn-3_1 span:hover:after {
+    width: 100%;
+  }
+  
+  /* 4 */
+
+
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.card {
+    background-color: #e6e6e6;
+    width: 20vw;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.content_knigi {
+  background-color: rgba(255, 255, 255, 0.719);
+  width: 80vw;
+  border-radius: 10px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.info_mod {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px;
+}
+
+.red_circle {
+  width: 15px;height: 15px;background-color: red;border-radius: 100%;margin: 0px 10px;
+}
+
+.green_circle {
+  width: 15px;height: 15px;background-color: rgb(145, 255, 0);border-radius: 100%;margin: 0px 10px;
+}
+
+.o_admine {
+  font-family: arial;
+  margin: 20px 0px;
+  width: 60%;
+  font-size: 18px;
+}
+
+@media (max-width: 846px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 30vw;
+    height: 400px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .menu_knigi {
+    width: 90vw;
+  }
+  .content_knigi {
+    width: 90vw;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 516px) {
+  h2 {
+    font-size: 14px;
+  }
+  .info_name {
+    font-size: 10px;
+  }
+  .red_circle {
+    width: 10px;
+    height: 10px;
+  }
+  .green_circle {
+    width: 10px;
+    height: 10px;
+  }
+  .o_admine {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .menu{
+    height: 300px;
+    flex-direction: column;
+  }
+}
